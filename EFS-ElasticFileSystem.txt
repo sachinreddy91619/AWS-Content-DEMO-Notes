@@ -1,0 +1,42 @@
+EFS Elastic File System 
+
+..> The Elastic File system only works for the linux Systems only. It does not support to the windows systems.
+..> using the EFS we can replicate the work from one ec2 in to the another ec2.
+
+..> which means if we created the file in one ec2 instance the that file directly shared across all the ec2 instance in that region.
+
+..>  steps to do the demo of EFS in AWS LAB.
+
+step-1 : launch the ec2 , with the security group having permissions of the NFS, in one subnet.
+
+step-2 : launch another ec2 , with the security group having permissions of the NFS, in another  subnet.
+
+step-3 : aws provides you with an EFS service , we need go to that service and we need to select for the option called as create EFS, and leave the first setp as default, and in the next step choose security group which attached to ec2 instances. leave the third step as default.
+
+..> 
+
+step-4 : open the  two ec2 instances  with using the putty software.
+
+step-5 : After opening the ec2 instaces,  convert in to the root user from normal user.
+
+sudo su
+
+step-6 : make a directory using the below command, in two ec2 instances because this directory is for storing the data from ec2 instances.
+mkdir efsname1
+
+step -7 : we need to download the efs utilistes in the two ec2 instances.
+
+yum install -y amazon-efs-utils
+
+step -8: we need to go to the efs service in aws console , click on the efs file which you created, and click on the attach
+
+..> then we get the two options i) Mount via DNS 
+ii) Mount via IP 
+
+select the mount via dns. and select the command which is shown below ( sudo mount -t efs -o tls 
+
+step- 9: execute the the copied command in the 2 ec2 instances.
+
+step -10 : go to the ec2 instances , and go in to the directory , and create the files by using the touch file1 file2 command in one instance then go in to the another ec2 instance and check in the directory so that we can see the files which we are created in first ec2 instance.
+
+
