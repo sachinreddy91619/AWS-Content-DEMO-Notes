@@ -1,0 +1,577 @@
+Cloud Essentials - Knowledge Badge Readiness Path
+
+notes of the cloud essentials lectures.
+
+module-1:
+
+AWS Cloud for Businesses:
++++++++++++++++++++++++++++++
+Speed:: With the AWS Cloud, organizations can experiment with applications and new business models at lower cost and greater speed.
+
+Scale: The AWS Cloud creates opportunities for organizations to scale products almost instantaneously.
+
+
+Innovation:By moving to the cloud , it makes your team to innovate and use technologies such as advanced analytics, the Internet of Things, or IoT, and automation at scale.
+
+Productivity: The adoption of cloud principles such as infrastructure and security as code helps to automate compliance and other routine processes, which speeds up productivity.  
+
+On-Premises Job Roles:
+++++++++++++++++++++++++++++
+IT Solution Architect
+
+System Administrator
+
+Network Administrator
+
+Desktop Administrator
+
+Application Administrator
+
+Database Administrator
+
+As the companny move to the aws cloud then it's IT infrastructure gone and managed by the aws and even some jobs role also not required.
+
+ex: System Administrator, In an on-premises environment, they handle the on-site hardware and infrastructure. When an organization moves to the cloud, that falls under the responsibility of AWS.
+
+Job Roles in the Cloud :
++++++++++++++++++++++++++++++
+
+
+Cloud Architect
+..> The Cloud Architect is responsible for delivering an overall cloud strategy and is in charge of the entire cloud environment.
+..> The Cloud Architect builds a cloud architecture blueprint to deliver highly available, cost-efficient, and scalable cloud environments for your company.
+..>Cloud Architect need to be an subject matter expert and the go-to for anything related to the cloud.
+
+
+System Administrator
+..>The System Administrator is responsible for overall performance of cloud systems.
+..> They keeps systems working together by managing configurations, completing detailed tasks, and assisting Database Administrators with setting up database servers in the cloud. 
+..> System Administrator is adaptable and proficient with configuration management,
+ requirements gathering, 
+deployment planning, 
+and completing detailed hands-on tasks. 
+...> 
+
+
+
+Security Administrator:
+..> security and compliance is a shared responsibility between AWS and the customer.
+..> AWS is responsible for the security of the cloud, which includes protecting the infrastructure that runs all of the services offered in the AWS Cloud.
+..> The customer is responsible for security in the cloud. This is the Security Administrator’s primary responsibility. 
+..> Security Administrator responsible for the overall integrity, confidentiality, and protection of data and resources in the cloud.
+..> 
+
+
+DevOps Administrator:
+
+..> Applies programming scripting languages with proficiency
+..> Understands and applies QA and testing
+..> Understands operations and manages developers
+..> Orchestrates the many tools and stages in the pipeline
+
+module-2:
+
+AWS Cloud Practitioner Essentials:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CLIENT- SERVER MODEL.
+ 
+..> In computing, a client can be a web browser or desktop application that a person interacts with to make requests to computer servers. A server can be services, such as Amazon Elastic Compute Cloud (Amazon EC2) – a type of virtual server.
+
+
+DEPLOYMENT MODELS:
+
+..> The three cloud computing deployment models are
+ cloud-based, 
+on-premises, 
+and hybrid. 
+
+# cloud based deployment:
+Run all parts of the application in the cloud.
+Migrate existing applications to the cloud.
+Design and build new applications in the cloud.
+
+# on-premises:
+In this model, resources are deployed on premises by using virtualization and resource management tools.
+ 
+# hybrid Deploment
+.@ Connect cloud-based resources to on-premises infrastructure.
+.@ Integrate cloud-based resources with legacy IT applications.
+
+
+TYPES of the EC2 instances.
++++++++++++++++++++++++++++
+.@ General Purpose 
+..> provide a balance of compute, memory, and networking resources.
+.> application servers
+.> gaming servers
+.> backend servers for enterprise applications
+.> small and medium databases
+
+.@ Compute Optimized
+..> Are ideal for compute-bound applications and high-performance processors. 
+.> batch processing workloads that require processing many transactions in a single group.
+
+.@ Memory Optimized
+
+..>  Memory optimized instances enable you to run workloads with high memory needs and receive great performance.
+..> 
+.@ Storage Optimized
+
+..> distributed file systems, data warehousing applications, and high-frequency online transaction processing (OLTP) systems.
+.> Storage optimized instances are designed to deliver tens of thousands of low-latency, random IOPS to applications. 
+.> 
+
+.@  Accelerated Optimized.
+
+.> functions include floating-point number calculations, graphics processing, and data pattern matching.
+
+
+EC2 instance Pricing:
+++++++++++++++++++++++++++
+on-demand
+reserved
+Ec2 Instance saving plans
+spot instance
+dedicated hosts
+
+Scaling Amazon EC2
++++++++++++++++++++++++
+..> 
+Scalability involves beginning with only the resources you need and designing your architecture to automatically respond to changing demand by scaling out or in.
+
+..> Amazon EC2 Auto Scaling enables you to automatically add or remove Amazon EC2 instances in response to changing application demand
+
+..>Within Amazon EC2 Auto Scaling, you can use two approaches:
+ dynamic scaling and
+ predictive scaling.
+
+.@ Dynamic scaling responds to changing demand. 
+.@ Predictive scaling automatically schedules the right number of Amazon EC2 instances based on predicted demand.
+
+NOTE: To scale faster, you can use dynamic scaling and predictive scaling together.
+
+..> By adding Amazon EC2 Auto Scaling to an application, you can add new instances to the application when necessary and terminate them when no longer needed.
+
+NOTE: The minimum capacity is the number of Amazon EC2 instances that launch immediately after you have created the Auto Scaling group.
+
+2) set the desired capacity at required number of  Amazon EC2 instances even though your application needs a minimum of a single Amazon EC2 instance to run.
+
+3) we can set an Auto Scaling group is the maximum capacity which is used for the future purpose .
+
+
+
+Elastic Load Balancing
+
+..> Elastic Load Balancing is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. 
+
+..> Although Elastic Load Balancing and Amazon EC2 Auto Scaling are separate services, they work together to help ensure that applications running in Amazon EC2 can provide high performance and availability. 
+
+
+
+Messaging and Queuing
+
+.@ Amazon SQS
+send messages
+store messages
+receive messages
+between software components.
+At any Volume.
+
+payload: data contained within a message
+
+
+SNS Topic: a channel for messages to  be delivered
+
+
+Monolithic applications and microservices:
+
+monolithic application: 
+
+..> In this application if a single component fails, other components fail, and possibly the entire application fails.
+
+..> You have an application with tightly coupled components. 
+..> These components might include databases, servers, the user interface, business logic, and so on.
+..> This type of architecture can be considered a monolithic application. 
+
+Microservices application:
+
+..> In this the application components are loosely coupled.
+
+..> In this case, if a single component fails, the other components continue to work because they are communicating with each other. 
+
+..> 
+
+Amazon Simple Queue Service
+
+..> Using Amazon SQS, you can send, store, and receive messages between software components, without losing messages or requiring other services to be available. 
+
+
+
+
+MODULE 3: AWS Global Infrastructure
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+..> regions are geographically isolated areas.
+..> regions contain availability zones.
+
+key factors to choose the region:
+
+compliance
+
+..> For example, if your company requires all of its data to reside within the boundaries of the UK, you would choose the London Region. 
+
+proximity
+
+..> Selecting a Region that is close to your customers will help you to get content to them faster.
+
+feature availability
+pricing
+
+
+An Availability Zone is a single data center or a group of data centers within a Region.
+
+Edge locations:
+
+..> An edge location is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery.
+
+ MODULE 4 :Networking :
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+we have vpc virtual private subnet.
+
+In this we have a private subney and public subnet.
+
+Subnets are chuncks of the ip addresses in your vpc that allow you to group resources.
+
+
+A networking service that you can use to establish boundaries around your AWS resources is Amazon Virtual Private Cloud (Amazon VPC).
+
+A subnet is a section of a VPC that can contain resources such as Amazon EC2 instances. we  can group resources based on security or operational needs. Subnets can be public or private. 
+
+To allow public traffic from the internet to access your VPC, you attach an internet gateway to the VPC.
+
+An internet gateway is a connection between a VPC and the internet.
+
+
+virtual private network (VPN) connection that encrypts (or protects) your internet traffic from all the other requests around it. 
+
+The virtual private gateway is the component that allows protected internet traffic to enter into the VPC.
+
+
+A virtual private gateway enables you to establish a virtual private network (VPN) connection between your VPC and a private network, such as an on-premises data center.
+
+
+A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.
+
+A corporate data center routes network traffic to an AWS Direct Connect location. That traffic is then routed to a VPC through a virtual private gateway. All network traffic between the corporate data center and VPC flows through this dedicated private connection.
+
+
+
+The only reason to use the subnets in the vpc is the provide access to the Internet Gateway.
+
+..> only the public subnet will have the internet gateway connection.
+
+The NACL will be only at the VPC Level , but the security group is at the EC2 instance Level.
+
+The diff bet the security group and NACL 
+
+SG                                 NACL
+1) it is stateful(                 it is stateless. it does not store
+it has memory and it                 any thing.
+ will save the how come in 
+and how went out)
+ 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+MODULE 5: STORAGE AND DATABASES:
+
+Block-level storage volumes behave like physical hard drives.
+
+.> An instance store provides temporary block level storage for an ec2 instance, its life span is as the instance lifespan.
+
+.> when the instance is terminated , we lose the complete data which is present in the instance store.
+
+AWS Elastic Block Store 
+
+.> If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
+
+.> You can take incremental backups of EBS volumes by creating Amazon EBS snapshots.
+
+.> An EBS snapshot(opens in a new tab) is an incremental backup. This means that the first backup taken of a volume copies all the data. For subsequent backups, only the blocks of data that have changed since the most recent snapshot are saved
+
+..> characteristics of the Amazon EBS service : best for data that requires retention and Separate drives from the host computer of an EC2 instance.
+
+
+AWS S3 Storage :
+
+..> Amazon Simple Storage Service (Amazon S3)(opens in a new tab) is a service that provides object-level storage. Amazon S3 stores data as objects in buckets.
+
+..> The maximum file size for an object in Amazon S3 is 5 TB.
+
+
+S3 STORAGE CLASSES:
+#: STANDARD - Designed for frequently accessed data,
+ Stores data in a minimum of three Availability Zones
+
+#: STANDARD-INFREQUENT ACCESS: deal for infrequently accessed data, 
+Similar to Amazon S3 Standard but has a lower storage price and higher retrieval price, which store data in a minimum of three Availability Zones.
+
+#: ONE-ZONE-INFREQUENT ACCESS: Stores data in a single Availability Zone, Has a lower storage price than Amazon S3 Standard-IA.
+
+#: INTELLIGRNT-TIERING :Ideal for data with unknown or changing access patterns , Requires a small monthly monitoring and automation fee per object.
+
+#: S3 GLACIER INSTANT RETRIEVAL.
+#: S3 GLACIER FLEXIBLE RETRIEVAL.
+#: S3 Glacier Deep Archive
+
+
+AWS databases
+..> aws rds   ( for relational data base)
+..> aws dynamodb ( for nosql data base) 
+
+
+Amazon Redshift
+
+..> Amazon Redshift is a data warehousing service that you can use for big data analytics.
+..> It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.
+
+AWS DATA BASE MIGRATION SERVICE:
+
+..>The data in the database is migrated from the on premises database to the aws datbase.
+
+..> During the migration, your source database remains operational, reducing downtime for any applications that rely on the database. 
+
+..> we have homogeneous data base migration ( From mysql to aws rds mysql database migration.)
+
+..>  we have heterogeneous data base migration ( From mysql to aws rds oracle database migration.)
+
+AWS NEPTUNE :
+..> AWS is a graph database service.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+MODULE 6: SECURITY :
+
+..> AWS is responsible for the security of the cloud and Customer is responsible for the security in the cloud.
+
+
+AWS responsibility :
+
+
+#: Software: Compute, storage, database, networking
+#: Hardware: Regions, Availability Zones, Edge Locations
+#: areas such as the host for operating system, 
+the virtualization layer, and even the physical security of the data centers from which services operate. 
+
+#: Network infrastructure ,Virtualization infrastructure
+
+Customer responsibility :
+
+Customer data
+Platform, applications, Identity and Access Management (IAM).
+Operating systems, and network and firewall configuration
+
+Client-side data encryption, server-side data encryption, and networking traffic protection.
+
+
+User Permission and Access:
+
+.>In IAM, multi-factor authentication (MFA) provides an extra layer of security for your AWS account.
+
+AWS Identity and Access Management (IAM):
+
+.> Root Users
+.> IAM Users
+.> IAM Policies
+.> IAM Roles
+
+AWS Organizations:
+.> If we have the multiple aws accounts then if we want to manage them we need to use the AWS Organizations for that.
+
+.> In AWS Organizations, you can centrally control permissions for the accounts in your organization by using service control policies (SCPs).
+
+.> we need to keep the aws accounts in the Organizational units (OUs) to make it easier to manage the accounts.when we apply a polocy to that OU , all the accounts in the OU we inherit the permissions specified in that policy.
+
+AWS Artifact :
+.> AWS Artifact is a service that provides on-demand access to AWS security and compliance reports and select online agreements,such as AWS ISO certifications, Payment Card Industry (PCI) reports, and Service Organization Control (SOC) reports.
+.> AWS Artifact consists of two main sections:
+
+ #: AWS Artifact Agreements :
+Suppose that your company needs to sign an agreement with AWS regarding your use of certain types of information throughout AWS services. You can do this through AWS Artifact Agreements. 
+
+NOTE : AWS provides AWS Artifact documents and agreements to you free of charge.
+ #: AWS Artifact Reports :
+suppose that a member of your company’s development team is building an application and needs more information about their responsibility for complying with certain regulatory standards. so the AWS Artifact Reports provide compliance reports from third-party auditors. These auditors have tested and verified that AWS service and it is good to use.
+
+Distributed Denial-Of-Service-Attacks:
+
+.> A denial-of-service (DoS) attack is a deliberate attempt to make a website or application unavailable to users. here the attacks form the single attacker.
+
+.> distributed denial-of-service (DDoS) attack, multiple sources are used to start an attack that aims to make a website or application unavailable.
+
+
+
+ AWS Shield :
+.> AWS Shield is a service that protects applications against DDoS attacks.
+ .> AWS Shield provides two levels of protection: Standard and Advanced.
+#: AWS Shield Standard:automatically protects all AWS customers at no cost. It protects your AWS resources.
+#: AWS Shield Advanced is a paid service that provides detailed attack diagnostics and the ability to detect and mitigate sophisticated DDoS attacks.
+
+
+
+AWS Key Management Service:
+.> It enables you to perform encryption operations through the use of cryptographic keys
+
+AWS WAF:
+.> It is a web application firewall that lets you monitor network requests that come into your web applications. 
+
+AWS Inspector :
+.> Amazon Inspector helps to improve the security and compliance of applications by running automated security assessments. 
+
+Amazon GuardDuty:
+.>It is a service that provides intelligent threat detection for your AWS infrastructure and resources.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Module-7:
+MONITORING AND ANALYTICS SERVICES:
+
+AWS CLOUD WATCH.
+AWS CLOUD TRAIL.
+AWS Trusted Advisor:
+#: It is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices.
+.> Trusted Advisor compares its findings to AWS best practices in five categories: cost optimization, performance, security, fault tolerance, and service limits. 
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+module-8:
+AWS Billing and Cost Management:
+
+..>  cost visibility—or the ability to measure cost—is crucial to understanding the value a cloud environment.
+..> 
+
+What is AWS Billing and Cost Management?
+
+AWS Cost Explorer:
+.> It is a tool that lets you visualize, understand, and manage your AWS costs and usage over time.
+
+..> The set of cost reporting and monitoring tools provided by AWS is collectively referred to as Billing and Cost Management.
+
+Estimate and plan your AWS costs.
+
+Receive alerts if your costs exceed or approach a threshold.
+
+Assess your biggest investments in AWS resources.
+
+Streamline your accounting if you work with multiple AWS accounts.
+
+
+..> we have the four services
+
+THESE TWO SERVICES ARE FOR ESTABLISH VISIBILITY 
+AWS Cost Explorer:
+# Visualize and Explore Your AWS Costs and Usage over time.
+ 
+AWS Costs and Usage Reports:
+# Achieve visibility into your  AWS spend.
+
+THESE TWO SERVICES ARE FOR PREVENT OVERSPEND
+Aws Budgets:
+# Improve planning and cost control with flexible budgeting and forecasting.
+Aws Cost Anomaly Detection:
+# Help reduce cost surprises with machine learning.
+
+
+What is AWS Cost Anomaly Detection?
+
+..> AWS Cost Anomaly Detection is an AWS Cost Management feature that uses machine learning to continuously monitor your cost and usage to detect unusual spending. 
+...> 
+AWS Cost Anomaly Detection
+Create a cost monitor
+Get alerted
+Analye root causee.
+
+AWS WELL-Architected Framework:
+++++++++++++++++++++++++++++++++++++++
+.> It helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. 
+
+.> The Well-Architected Framework is based on six pillars: 
+
+Operational excellence : Operational excellence is the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.  
+
+
+Security : The Security pillar is the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies. 
+
+
+Reliability : includes testing recovery procedures, scaling horizontally to increase aggregate system availability, and automatically recovering from failure.
+
+Performance efficiency : Performance efficiency is the ability to use computing resources efficiently to meet system requirements .
+
+Cost optimization : is the ability to run systems to deliver business value at the lowest price point. 
+
+
+Sustainability : Sustainability is the ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all regions.
+
+Benefits from aAWS CLOUD: 
+	
+
+Trade upfront expense for variable expense:
+
+Benefit from massive economies of scale:
+.> Economies of scale translate into lower pay-as-you-go prices.
+
+Stop guessing capacity:
+
+Increase speed and agility:
+.> it easier for you to develop and deploy applications.
+
+Stop spending money running and maintaining data centers:
+
+.> the ability to focus less on these tasks and more on your applications and customers.
+
+
+Go global in minutes:
+
+.> enables you to quickly deploy applications to customers around the world, while providing them with low latency.
+
+
+
+
+The AWS Certified Cloud Practitioner exam includes four domains:
+
+Cloud Concept
+Security and Compliance
+Technology
+Billing and Pricing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
